@@ -1,0 +1,21 @@
+{
+  "name": "@paypalcorp/ecommerceapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "cd front-end && npm install && npm run build && cd .. && cd back-end && npm install",
+    "start": "cd back-end && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaithunAttainU/ECommerceApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaithunAttainU/ECommerceApp/issues"
+  },
+  "homepage": "https://github.com/JaithunAttainU/ECommerceApp#readme"
+}
