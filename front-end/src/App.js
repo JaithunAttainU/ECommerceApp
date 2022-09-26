@@ -10,6 +10,8 @@ import Main from './components/Main';
 import SideBar from './components/SideBar';
 import { ThemeProvider } from '@emotion/react';
 import { darkTheme } from './theme';
+import { Box } from '@mui/material';
+import { Stripe } from './components/Stripe';
 
 function App() {
   return (
@@ -19,14 +21,17 @@ function App() {
     //     <Route path="/products" element={<Product />} />
     //   </Routes>
     // </BrowserRouter>
-    <ThemeProvider theme={darkTheme}>
+    // <ThemeProvider theme={darkTheme}>
+    <Box bgcolor={"background.default"} color={"text.primary"}>
       <NavBar />
       <Stack direction="row" justifyContent="space-between" spacing={2}>
         <SideBar />
         <Main />
         <RightBar />
       </Stack>
-    </ThemeProvider>
+      <Stripe />
+    </Box>
+    // </ThemeProvider>
   );
 }
 

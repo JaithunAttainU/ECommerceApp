@@ -6,7 +6,7 @@ function Product() {
   const [productArray, setProductArray] = useState([])
 
   const getAllProducts = async () => {
-    const response = await fetch('/api/products')
+    const response = await fetch('/api/products', { method: 'POST' })
     const productData = await response.json()
     setProductArray(productData)
   }
